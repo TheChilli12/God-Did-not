@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color:grey;
+    width: auto;
+    height: 108px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 50px;
+}
+.banner{
+    display: flex;
+    flex: auto;
+    justify-content: space-around;
+    margin: 50px;
+}
