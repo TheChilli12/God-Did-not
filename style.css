@@ -53,8 +53,8 @@
     flex: 1;
     flex-direction: row;
     justify-content: center;
-    width: 98%;
-    padding: 1%;
+    width: 94%;
+    padding: 3%;
 }
 
 .funtions-container{
@@ -116,10 +116,14 @@
     border-radius: 100%;
     transition-duration: 0.2s;
 }
-.bannercontainer{
+.banner-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     flex-direction: column;
+}
+.banner:hover{
+    transform: scale(1.01);
+    transition-duration: 0.2s;
 }
 @media (max-width: 500px){
     #button-container1{
@@ -129,9 +133,6 @@
     #button-container2{
         height: 46.35%;
         gap: 2%;
-    }
-    .footer-container{
-        position: absolute;
     }
 
 }
