@@ -2,19 +2,136 @@
     margin: 0;
     padding: 0;
 }
-nav {
+
+.div-container{
+    display: flex;
+    top: 0;
     background-color:grey;
-    width: auto;
-    height: 108px;
-    justify-content: space-between;
+    height: 72px;
+    justify-content: stretch;
     align-items: center;
+    width: 100%;
 }
-.logo{
-    margin: 50px;
+
+.footer-container{
+    display: flex;
+    bottom: 0;
+    background-color:grey;
+    height: 72px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
 }
+
+#faq-contianer{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    align-items: left;
+    margin-left: 2em;
+    
+}
+
+.logo-container{
+    display: flex;
+    left:0;
+    width: 50%;
+    height: 61.8%;
+    flex: 1;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+#logo{
+    margin-left: 2em;
+}
+
 .banner{
     display: flex;
-    flex: auto;
-    justify-content: space-around;
-    margin: 50px;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    width: 98%;
+    padding: 1%;
+}
+
+.funtions-container{
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+#button-container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height:61.8%;
+    width: 47%;
+    margin-right: 2em;
+    flex: 1;
+    gap: 48px;
+}
+
+#button-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height:61.8%;
+    width: 36.5%;
+    margin-right: 2em;
+    flex: 1;
+    gap: 48px;
+}
+
+.button{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    height:100%;
+    width: auto;
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+
+.button-image{
+    display: flex;
+}
+
+.logo-container:hover{
+    transform: scale(1.02);
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+
+.button-image:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+.bannercontainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+@media (max-width: 500px){
+    #button-container1{
+        height: 46.35%;
+        gap: 2%;
+    }
+    #button-container2{
+        height: 46.35%;
+        gap: 2%;
+    }
+    .footer-container{
+        position: absolute;
+    }
+
 }
