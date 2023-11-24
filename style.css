@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* header */
 .div-container{
     display: flex;
     top: 0;
@@ -11,26 +11,6 @@
     justify-content: stretch;
     align-items: center;
     width: 100%;
-}
-
-.footer-container{
-    display: flex;
-    bottom: 0;
-    background-color:grey;
-    height: 72px;
-    justify-content: left;
-    align-items: center;
-    width: 100%;
-}
-
-#faq-contianer{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    flex: 1;
-    align-items: left;
-    margin-left: 2em;
-    
 }
 
 .logo-container{
@@ -46,7 +26,7 @@
 #logo{
     margin-left: 2em;
 }
-
+/* Banner styling */
 .banner{
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +37,16 @@
     padding: 3%;
 }
 
+.banner-container{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+.banner:hover{
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+}
+/* containers (header and footer)*/
 .funtions-container{
     display: flex;
     flex-direction: row;
@@ -79,6 +69,26 @@
     gap: 48px;
 }
 
+.footer-container{
+    display: flex;
+    bottom: 0;
+    background-color:grey;
+    height: 72px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+#faq-contianer{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    align-items: left;
+    margin-left: 2em;
+    
+}
+
 #button-container2{
     display: flex;
     flex-direction: row;
@@ -89,6 +99,8 @@
     flex: 1;
     gap: 48px;
 }
+
+/* buttons */
 
 .button{
     display: flex;
@@ -104,6 +116,8 @@
     display: flex;
 }
 
+/* Hover animations */
+
 .logo-container:hover{
     transform: scale(1.02);
     border-radius: 100%;
@@ -116,15 +130,32 @@
     border-radius: 100%;
     transition-duration: 0.2s;
 }
-.banner-container{
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
+
+/* clothes container */
+ul{
+    list-style-type: none
 }
-.banner:hover{
-    transform: scale(1.01);
+.clothes-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    width: 98%;
+    padding: 1%;
+}
+.clothes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    padding: 1%;
+}
+.clothes:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
     transition-duration: 0.2s;
 }
+
+/* Media queries */
+
 @media (max-width: 500px){
     #button-container1{
         height: 46.35%;
@@ -134,5 +165,13 @@
         height: 46.35%;
         gap: 2%;
     }
-
+    .clothes-container{
+        flex-wrap: wrap;
+        gap: 1%;
+    }
+    .clothes{
+        height: 90%;
+        width: 90%;
+        gap: 5%;
+    }
 }
