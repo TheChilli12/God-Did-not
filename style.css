@@ -216,6 +216,12 @@ ul{
     .funtions-container2{
         flex-basis: 60%;
     }
+    .div-container{
+        gap: 10%;
+    }
+    .footer-container{
+        gap: 30%;
+    }
     .button-image{
         width: 36px;
     }
