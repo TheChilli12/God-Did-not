@@ -11,7 +11,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
-/* header */
+
+
+/* containers (header and footer)*/
 .div-container{
     display: flex;
     top: 0;
@@ -33,31 +35,6 @@ body {
     max-width: 10%;
 }
 
-
-/* Banner styling */
-.banner{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: center;
-    width: 98%;
-    padding: 1%;
-    height: auto;
-}
-
-.banner-container{
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
-    height: auto;
-    flex: 1 0 auto;
-    padding: 1rem;
-}
-.banner:hover{
-    transform: scale(1.01);
-    transition-duration: 0.2s;
-}
-/* containers (header and footer)*/
 .funtions-container{
     display: flex;
     flex-direction: row;
@@ -84,13 +61,28 @@ body {
     gap: 60%;
 }
 
-#faq-button-container{
+/* Banner styling */
+.banner{
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
-    align-items: center;
-    left:0;
-    margin-left: 2em;
-    max-width: 10%;
+    justify-content: center;
+    width: 98%;
+    padding: 1%;
+    height: auto;
+}
+
+.banner-container{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    height: auto;
+    flex: 1 0 auto;
+    padding: 1rem;
+}
+.banner:hover{
+    transform: scale(1.01);
+    transition-duration: 0.2s;
 }
     
 
@@ -116,7 +108,7 @@ body {
     transition-duration: 0.2s;
 }
 
-/* clothes container */
+/* clothes styling */
 ul{
     list-style-type: none
 }
@@ -142,7 +134,16 @@ ul{
     transition-duration: 0.2s;
 }
 
-/* FAQ stuff */
+/* FAQ styling */
+#faq-button-container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    left:0;
+    margin-left: 2em;
+    max-width: 10%;
+}
+
 #FAQ-container{
     display: flex;
     flex-direction: column;
@@ -155,7 +156,6 @@ ul{
     height: 30%;
 }
 
-/* leave unchanged */
 #QNAs{
     display: flex;
     align-items: center;
