@@ -51,7 +51,7 @@ body {
     flex-direction: column;
     height: auto;
     flex: 1 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 .banner:hover{
     transform: scale(1.01);
@@ -75,6 +75,7 @@ body {
 
 .footer-container{
     display: flex;
+    left:0;
     bottom: 0;
     background-color:grey;
     height: 72px;
@@ -129,7 +130,7 @@ ul{
 }
 .clothes{
     display: flex;
-    flex: 1;
+    flex-grow: inherit;
     height: 100%;
     flex-wrap: wrap;
     width: 98%;
@@ -145,14 +146,13 @@ ul{
 #FAQ-container{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    flex-basis: 20%;
+    height: auto;
     align-items: center;
+    padding: 1rem;
 }
 #FAQ-header{
     font-size: 48px;
-    padding: 4%;
-    height: 20%;
+    height: 30%;
 }
 
 /* leave unchanged */
@@ -161,8 +161,8 @@ ul{
     align-items: center;
     flex-direction: column;
     width: 80%;
-    height: 80%;
-    padding: 1em;
+    height: 70%;
+    padding: 4%;
     justify-content: space-around;
 }
 
@@ -204,12 +204,15 @@ ul{
     outline: solid;
   }
 .TextPadding{
-    padding: 2%;
+    padding: 3%;
 }
 
 /* Media queries */
 
-@media (max-width: 500px){
+@media (max-width: 1024px){
+    .banner{
+        width: 96%;
+    }
     .funtions-container{
         flex-basis: 80%;
     }
@@ -226,20 +229,14 @@ ul{
         width: 36px;
     }
     .clothes-container{
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 1%;
     }
     .clothes{
         height: auto;
     }
-    #FAQ-header{
-        font-size: 24px;
-    }
-    .accordion {
-        padding: 4%;
-    }
     .QNA-Singular{
-        padding: 4%;
+        padding: 1em;
     }
 }
 
