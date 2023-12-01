@@ -1,54 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Uniqlo</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <title>Uniqlo</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header class="div-container">
-            <nav class="logo-container"><a id="logo" href="index.html"><img src="CompanyLogo/uniqlo-logo.png" width = "44.5" height="44.5"></a></nav>
+            <nav class="logo-container"><a id="logo" href="index.html"><img src="CompanyLogo/uniqlo.svg" alt="logo"></a></nav>
             <nav class="funtions-container">
-                <ul id = "button-container1">
-                    <a class = "button" href="Catalog.html" target="_blank"><img class = "button-image" src="Icons\TopBarIcons\icons8-shopping-bag-90.png" alt="Catalog"></a>
-                    <a class = "button" href="#"><img class = "button-image" src="Icons\TopBarIcons\icons8-search-100.png" alt="Search"></a>
-                    <a class = "button" href="#"><img class = "button-image" src="Icons\TopBarIcons\icons8-pray-48.png" alt="Wishlist"></a>
-                    <a class = "button" href="#"><img class = "button-image" src="Icons\TopBarIcons\icons8-person-64.png" alt="Account"></a>
-                    <a class = "button" href="#"><img class = "button-image" src="Icons\TopBarIcons\icons8-shopping-cart-90.png" alt="Cart"></a>
-                </ul>
+                <a href="Catalog.html" target="_blank"><img class = "button-image" src="Icons/TopBarIcons/icons8-shopping-bag-90.png" alt="Catalog"></a>
+                <a href="#"><img class = "button-image" src="Icons/TopBarIcons/icons8-search-100.png" alt="Search"></a>
+                <a href="#"><img class = "button-image" src="Icons/TopBarIcons/icons8-pray-48.png" alt="Wishlist"></a>
+                <a href="#"><img class = "button-image" src="Icons/TopBarIcons/icons8-person-64.png" alt="Account"></a>
+                <a href="#"><img class = "button-image" src="Icons/TopBarIcons/icons8-shopping-cart-90.png" alt="Cart"></a>
             </nav>
         </header>
         <div id="FAQ-container">
             <h1 id="FAQ-header"><b>Frequently Asked Questions</b></h1>
             <div id="QNAs">
                 <div class="QNA-Singular">
-                    <p class="FAQ-question">Q - What services do we provide?</p>
-                    <p class="FAQ-answer">A - Alongside the sale of our clothing we provide 
+                    <button class="FAQ-question">Q - What services do we provide?</button>
+                    <div class="FAQ-answer">
+                    <p class="TextPadding"> 
+                        A - Alongside the sale of our clothing we provide 
                         alteration services where Normal stitches for items 
                         below and above $29.90 are Free and $5.00 
                         respectively while blind stitches for items 
                         below and above $29.90 are $5.00 and $10.00 
-                        respectively</p>
+                        respectively.
+                        <br><br>Do note that only selected bottoms will be offered this service.
+                    </p>
+                    </div>
                 </div>
                 <div class="QNA-Singular">
-                    <p class="FAQ-question">Q - What services do we provide?</p>
-                    <p class="FAQ-answer">Q - What services do we provide?</p>
+                    <button class="FAQ-question">Q - How do we contact you about job offers?</button>
+                    <div class="FAQ-answer">
+                    <p class="TextPadding"> 
+                        A - Contact us through our <a href="https://www.linkedin.com/company/uniqlo/jobs/" target="_blank">LinkedIn</a> profile and we 
+                        will get back to you. We love hearing from those
+                        enthusiastic to be part of our Uniqlo family!</p>
+                    </div>
                 </div>
                 <div class="QNA-Singular">
-                    <p class="FAQ-question">Q - What services do we provide?</p>
-                    <p class="FAQ-answer">Q - What services do we provide?</p>
+                    <button class="FAQ-question">Q - Where can I get coupon codes?</button>
+                    <div class="FAQ-answer">
+                    <p class="TextPadding"> 
+                        A - Coupon codes can be redeemed in the UNIQLO App which is available for both
+                        <br><br><a href="https://play.google.com/store/apps/details?id=com.uniqlo.sg.catalogue&hl=en_SG&gl=US" target="_blank">Android</a> and <a href="https://apps.apple.com/us/app/uniqlo-us/id1284609872" target="_blank">Apple</a> devices</p>
+                    </div>
+                </div>
+                <div class="QNA-Singular">
+                    <button class="FAQ-question">Q - When do we restock our items?</button>
+                    <div class="FAQ-answer">
+                    <p class="TextPadding">
+                        A - Unfortunately, we are unable to provide any information about an item's restocking timeline or availability.
+                        <br><br> Our sincerest apologies for any inconvieniences this may have caused</p>
+                    </div>
+                </div>
+                <div class="QNA-Singular">
+                    <button class="FAQ-question">Q - What is the UNIQLO Recycling Programme?</button>
+                    <div class="FAQ-answer">
+                    <p class="TextPadding">
+                        A - It is an All-Product Recycling Initiative implemented by UNIQLO worldwide where customers like you can donate washed UNIQLO items to people in need such as refugees and  the underprivileged.
+                        <br><br>Kindly hand your items to the staff at any UNIQLO store during operating ours and we will ensure your contributions will make the world a better place
+                        <br><br>For information about said operating hours and UNIQLO outlets kindly head to <a href="https://map.uniqlo.com/sg/en/" target="_blank">this</a> website.</p>
+                    </div>
                 </div>
             </div>
         </div>
         <footer class="footer-container">
             <a id = "faq-button-container">FAQ</a>
-            <nav class="funtions-container">
-                <ul id = "button-container2">
-                    <a class = "button" href="https://www.facebook.com/uniqlo.sg/" target="_blank"><img class = "button-image" src="Icons\SocialsIcons\icons8-facebook-100.png" alt="facebook"></a>
-                    <a class = "button" href="https://www.instagram.com/uniqlosg" target="_blank"><img class = "button-image" src="Icons/SocialsIcons/icons8-instagram-100.png" alt="instagram"></a>
-                    <a class = "button" href="https://www.youtube.com/channel/UCdaRQkK9oFkLDQb-fLQCIJQ" target="_blank"><img class = "button-image" src="Icons\SocialsIcons\icons8-youtube-100.png" alt="youtube"></a>
-                    <a class = "button" href="https://www.tiktok.com/@uniqlosg" target="_blank"><img class = "button-image" src="Icons\SocialsIcons\icons8-tiktok-90.png" alt="Tiktok"></a>
-                </ul>
+            <nav class="funtions-container2">
+                <a href="https://www.facebook.com/uniqlo.sg/" target="_blank"><img class = "button-image" src="Icons/SocialsIcons/icons8-facebook-100.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/uniqlosg" target="_blank"><img class = "button-image" src="Icons/SocialsIcons/icons8-instagram-100.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UCdaRQkK9oFkLDQb-fLQCIJQ" target="_blank"><img class = "button-image" src="Icons/SocialsIcons/icons8-youtube-100.png" alt="youtube"></a>
+                <a href="https://www.tiktok.com/@uniqlosg" target="_blank"><img class = "button-image" src="Icons/SocialsIcons/icons8-tiktok-90.png" alt="Tiktok"></a>
             </nav>
         </footer>
+        <script src="Website.js"></script>
     </body>
 </html>

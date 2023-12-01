@@ -17,24 +17,23 @@ body {
     top: 0;
     background-color:grey;
     height: 72px;
-    justify-content: stretch;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
+    gap: 50%;
 }
+
 
 .logo-container{
     display: flex;
-    left:0;
-    width: 50%;
-    height: 61.8%;
     flex: 1;
-    align-items: left;
-    justify-content: flex-start;
+    align-items: center;
+    left:0;
+    margin-left: 2em;
+    max-width: 10%;
 }
 
-#logo{
-    margin-left: 2em;
-}
+
 /* Banner styling */
 .banner{
     display: flex;
@@ -62,23 +61,16 @@ body {
 .funtions-container{
     display: flex;
     flex-direction: row;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    justify-content: flex-end;
+    flex-basis: 40%;
+    justify-content: space-around;
     align-items: center;
-    flex: 1;
 }
-
-#button-container1{
+.funtions-container2{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    height:61.8%;
-    width: 47%;
-    margin-right: 2em;
-    flex: 1;
-    gap: 48px;
+    flex-basis: 30%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-container{
@@ -86,53 +78,33 @@ body {
     bottom: 0;
     background-color:grey;
     height: 72px;
-    justify-content: left;
+    justify-content: flex-end;
     width: 100%;
+    gap: 60%;
 }
 
 #faq-button-container{
     display: flex;
-    width: 50%;
-    height: 100%;
     flex: 1;
     align-items: center;
     left:0;
     margin-left: 2em;
+    max-width: 10%;
+}
     
-}
 
-#button-container2{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height:61.8%;
-    width: 36.5%;
-    margin-right: 2em;
-    flex: 1;
-    gap: 48px;
-}
 
 /* buttons */
 
-.button{
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-end;
-    height:100%;
-    width: auto;
-    flex-basis: auto;
-    flex-shrink: 1;
-}
 
 .button-image{
-    display: flex;
+    width: 48px;
 }
 
 /* Hover animations */
 
 .logo-container:hover{
     transform: scale(1.02);
-    border-radius: 100%;
     transition-duration: 0.2s;
 }
 
@@ -174,27 +146,16 @@ ul{
     display: flex;
     flex-direction: column;
     height: 100%;
+    flex-basis: 20%;
     align-items: center;
 }
 #FAQ-header{
-    display: flex;
     font-size: 48px;
     padding: 4%;
     height: 20%;
-    flex-direction: column;
-    justify-content: center;
 }
-.FAQ-question{
-    display: flex;
-    font-size: 24px;
-    background-color:lightgray;
-    outline-style: solid;
-    width:100%;
-    height: 80%;
-    flex: 1;
-    align-items: center;
-    padding-left: 5%;
-}
+
+/* leave unchanged */
 #QNAs{
     display: flex;
     align-items: center;
@@ -204,38 +165,61 @@ ul{
     padding: 1em;
     justify-content: space-around;
 }
+
 .QNA-Singular{
     display: flex;
     height: 98%;
     padding: 1%;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
-.FAQ-answer{
-    height: 100%;
-    padding: 1%;
+
+.FAQ-question{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 3%;
+    border: none;
+    text-align: left;
+    outline: solid;
     font-size: 24px;
-    padding-left: 5%;
-}
+    transition: 0.4s;
+    width: 100%;
+  }
 
 .FAQ-question:hover{
     transform: scale(1.01);
     transition-duration: 0.2s;
+    background-color: grey; 
+    color:white;
+    outline: solid;
+}
+
+.FAQ-answer {
+    display: none;
+    background-color: white;
+    width: 100%;
+    font-size: 24px;
+    outline: solid;
+  }
+.TextPadding{
+    padding: 2%;
 }
 
 /* Media queries */
 
 @media (max-width: 500px){
-    #button-container1{
-        height: 46.35%;
-        gap: 1%;
+    .funtions-container{
+        flex-basis: 80%;
     }
-    #button-container2{
-        height: 46.35%;
-        gap: 1%;
+    .funtions-container2{
+        flex-basis: 60%;
+    }
+    .button-image{
+        width: 36px;
     }
     .clothes-container{
-        flex: wrap;
         flex-direction: column;
         gap: 1%;
     }
@@ -245,5 +229,13 @@ ul{
     #FAQ-header{
         font-size: 24px;
     }
-
+    .accordion {
+        padding: 4%;
+    }
+    .QNA-Singular{
+        padding: 4%;
+    }
 }
+
+
+  
