@@ -13,7 +13,8 @@ This project aims to revamp the Uniqlo website to provide a simplified and easie
 
 ### Wireframes
 Though my design changed and improved drastically I still somewhat tried to follow the wireframes here: https://xd.adobe.com/view/95f07c0b-18cc-495d-a52b-bcac4b5f7cc5-c0a3/
-
+### Sourcecode
+I used the accordition source code for JavaScript which can be found here: https://www.w3schools.com/howto/howto_js_accordion.asp
 ### Who this website appeals to
 - e-commerce customers who wish to purchase Uniqlo products
 
